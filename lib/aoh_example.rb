@@ -32,6 +32,11 @@ def aoh_update(aoh, row, key, new_value)
   # Return the updated AoH
 aoh = [{:name => "Don Gately", :occupation =>"Live-in Staff"}, {:name =>"Joelle van Dyne", :occupation =>"Radio Personality"}, {:name => "Pat Monteseian", :occupation => "Staff"}, {:name => "Kate Gompert", :occupation =>"None"}, {:name =>"Bruce Green", :occupation => "Fan of Mildred"}]
 
-new_aoh= aoh[row][key]= new_value
+aoh[row][key]= new_value
 
 end
+
+aoh = [{:name => "Don Gately", :occupation =>"Live-in Staff"}, {:name =>"Joelle van Dyne", :occupation =>"Radio Personality"}, {:name => "Pat Monteseian", :occupation => "Staff"}, {:name => "Kate Gompert", :occupation =>"None"}, {:name =>"Bruce Green", :occupation => "Fan of Mildred"}]
+
+aoh_update(aoh, 1, :name, "Joelle van Dyne (PGOAT)")
+
